@@ -28,6 +28,9 @@ class TestLogin():
             time.sleep(0.8)
             num += 1
             count = self.login.page_find_login_code_error()
-        self.login.page_click_sign_btn()
-        time.sleep(1)
-        self.login.page_screenshot("./image/sign")
+
+        try:
+            self.login.page_click_sign_btn()
+        except:
+            self.login.page_screenshot("./image/sign")
+
