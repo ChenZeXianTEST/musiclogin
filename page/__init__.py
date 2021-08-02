@@ -15,6 +15,5 @@ page_login_code_error = By.CSS_SELECTOR, '[class="tooltip-inner"]'
 page_login_btn = By.CSS_SELECTOR, '[data-loading-text="正在提交..."]'
 # 签到按钮
 page_sign_btn = By.ID, 'sign'
-# page_sign_btn = By.ID, 'sg_sign'
 # 用户名头像
 page_user_picture = By.XPATH, '//*[@id="nav"]/ul[2]/li[5]/a'
