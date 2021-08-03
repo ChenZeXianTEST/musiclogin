@@ -31,9 +31,9 @@ class TestLogin():
 
         try:
             self.login.page_click_sign_btn()
-            time.sleep(3)
+            time.sleep(1)
+            self.login.page_screenshot("image_pass/sign")
             print("签到完成")
-            self.login.page_screenshot("./image_pass/sign")
         except:
-            self.login.page_screenshot("./image_fail/sign")
+            self.login.page_screenshot("image_fail/sign")
 
