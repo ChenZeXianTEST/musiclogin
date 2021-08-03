@@ -28,12 +28,11 @@ class TestLogin():
             time.sleep(0.8)
             num += 1
             count = self.login.page_find_login_code_error()
-
         try:
             self.login.page_click_sign_btn()
             time.sleep(1)
-            self.login.page_screenshot("image_pass/sign")
+            self.login.page_screenshot("C:/image/sign_pass.png")
             print("签到完成")
         except:
-            self.login.page_screenshot("image_fail/sign")
+            self.login.page_screenshot("C:/image/sign_fail.png")
 

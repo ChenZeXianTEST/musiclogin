@@ -30,4 +30,4 @@ class Base():
         ActionChains(self.driver).move_by_offset(x, y).click().perform()
 
     def base_get_screenshot(self, imagename):
-        self.driver.get_screenshot_as_file("C:/" + imagename + '.png')
+        self.driver.get_screenshot_as_file(imagename)
