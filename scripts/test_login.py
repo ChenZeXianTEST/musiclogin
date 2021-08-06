@@ -3,6 +3,7 @@ import os, sys
 sys.path.append(os.getcwd())
 from page.page_in import PageIn
 import time
+import datetime
 
 
 class TestLogin():
@@ -31,8 +32,8 @@ class TestLogin():
         try:
             self.login.page_click_sign_btn()
             time.sleep(1)
-            self.login.page_screenshot("C:/image/sign_pass.png")
+            self.login.page_screenshot("C:/image/sign_pass" + str(datetime.date.today()) + ".png")
             print("签到完成")
         except:
-            self.login.page_screenshot("C:/image/sign_fail.png")
+            self.login.page_screenshot("C:/image/sign_fail" + str(datetime.date.today()) + ".png")
 
