@@ -63,7 +63,7 @@ class Base():
         message.attach(att_doc)
         message.attach(att_image)
         smtp = smtplib.SMTP()
-        smtp.connect(smtpserver, 25)
+        smtp.connect(smtpserver, 465)
         smtp.login(user, password)
         smtp.sendmail(user, receiver, message.as_string())
         smtp.quit()
