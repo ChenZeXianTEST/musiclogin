@@ -7,13 +7,15 @@ page_login_page_btn = By.XPATH, '//*[@id="nav"]/ul[2]/li[4]/a'
 page_username = By.CSS_SELECTOR, '[placeholder="Email / 用户名"]'
 # 密码
 page_password = By.CSS_SELECTOR, '[name="password"]'
-# 验证码
-page_login_code = By.CSS_SELECTOR, '[placeholder="验证码"]'
-# 验证码错误提示
-page_login_code_error = By.CSS_SELECTOR, '[class="tooltip-inner"]'
 # 登录按钮
 page_login_btn = By.CSS_SELECTOR, '[data-loading-text="正在提交..."]'
 # 签到按钮
 page_sign_btn = By.ID, 'sign'
 # 用户名头像
 page_user_picture = By.XPATH, '//*[@id="nav"]/ul[2]/li[5]/a'
+# 人机交互按钮
+page_man_machine = By.CSS_SELECTOR, '[class="btn btn-secondary btn-block"]'
+# 滑动按钮
+page_hd_btn = By.CSS_SELECTOR, '[class="verify-left-bar"]'
+# 获取图片
+page_img = By.CSS_SELECTOR, 'img'
