@@ -40,16 +40,18 @@ class TestLogin:
 
         sign_text = self.login.page_get_sign_text()
         if sign_text == "已签":
-            pass
+            print("已签到")
         else:
-            # 点击签到
+            print("点击签到")
             self.login.page_click_sign_btn()
             time.sleep(1)
         # 判断图片路径是否存在
             if Path(image_path).exists():
-                pass
+                print("图片已存在")
             else:
+                print("截图")
                 self.login.page_screenshot(image_path)
+                print("发送邮件")
                 self.login.page_send_email(info["user"], info["pwd"], info["receiver"], image_path, today)
 
 
