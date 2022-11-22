@@ -62,6 +62,10 @@ class PageLogin(Base):
         """
         self.base_man_machine_calibration(page.page_img, page.page_hd_btn, page.page_man_machine)
 
+    def page_get_sign_text(self):
+        sign = self.base_find_element(page.page_sign_btn)
+        return sign.text
+
     def page_send_email(self, user, password, receiver, image_path, today):
         """
 
